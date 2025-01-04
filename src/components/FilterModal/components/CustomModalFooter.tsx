@@ -1,11 +1,6 @@
 import { Button, Grid, GridItem, ModalFooter } from '@chakra-ui/react'
 
-interface CustomModalFooterProps {
-	onClose: () => void
-}
-const CustomModalFooter = ({
-	onClose
-}: CustomModalFooterProps): JSX.Element => {
+const CustomModalFooter = (): JSX.Element => {
 	return (
 		<ModalFooter>
 			<Grid
@@ -22,7 +17,7 @@ const CustomModalFooter = ({
 						width="184px"
 						variant="solid"
 						colorScheme="brand"
-						onClick={onClose}
+						type="submit"
 					>
 						{'Apply'}
 					</Button>
